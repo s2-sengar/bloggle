@@ -1,0 +1,75 @@
+.form{
+    background-color: $color-form-bg;
+    padding: 6rem;
+    width: 80%;
+    &__container{
+        display: flex;
+        justify-content: center;
+    }
+}
+.input,
+.input{
+    color: inherit;
+    outline: none;
+    background-color: $color-form-input-bg;
+    border: 0;
+    font-size: inherit;
+    font-family: inherit;
+    padding: 1rem 2rem;
+    width: 100%;
+    &--item{
+        position: relative;
+    }
+    &--label{
+        text-transform: capitalize;
+        color: $color-secondary-green;
+        position: absolute;
+        top: 5px;
+        left: 0rem;
+        transform: translateY(-4rem);
+        opacity: 1;
+        transition: all .3s ease-in-out;
+    }
+    &:placeholder-shown + &--label{
+        opacity: 0;
+        left: 2rem;
+        transform: translateY(5px);
+    }
+    &::placeholder{
+        color: $color-secondary-green;
+    }
+    &--file-container{
+        display: flex;
+        align-items: center;
+    }
+    &--file-img{
+        height: 3rem;
+    }
+    &--file{
+        padding: 0;
+        margin: 0;
+        width: 17rem;
+        color: transparent;
+        // background-color: red;
+        height: 4.3rem;
+        margin-left: 3rem;
+        &::-webkit-file-upload-button{
+            visibility: hidden;
+        }
+        &::before{
+            position: absolute;
+            content: 'Choose File';
+            color: $color-secondary-green;
+            text-align: center;
+            display: block;
+            width: inherit;
+            padding: 1rem 1.5rem;
+            background-color: $color-form-input-bg;
+        }
+    }
+}
+.post{
+    &--content{
+        resize: none;
+    }
+}

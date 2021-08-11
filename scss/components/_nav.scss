@@ -1,0 +1,66 @@
+.navigation{
+    background-color: $color-primary-main--hero;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    &--container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.nav{
+    display: flex;
+    :not(:last-child){
+        margin-right: 2rem;
+    }
+    font-size: 1.8rem;
+    &__logo{
+        display: block;
+        height: 3.5rem;
+        width: auto;
+        margin-right: auto;
+    }
+    &__links,
+    &__social{
+        text-transform: capitalize;
+        display: flex;
+        :not(:last-child){
+            margin-right: 2rem;
+        }
+    }
+    &__items{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2.5rem 1rem;
+        cursor: pointer;
+        border-bottom: 2px solid transparent;
+        transition: all .2s;
+        a{
+            height: 100%;
+            display: block;
+        }
+        &:hover,
+        &:focus{
+            color: $color-secondary-green;
+            border-bottom: 2px solid $color-secondary-green;
+        }
+        &--social:hover a .icon--social,
+        &--social:focus a .icon--social{
+            fill: $color-secondary-green;
+        }
+
+    }
+}
+.git{
+    &__icon,
+    &-repo--icon{
+        height: 1.8rem;
+    }
+}
+.icon--social{
+    fill: $color-secondary-text;
+}
