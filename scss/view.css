@@ -191,44 +191,6 @@ a, a:visited {
   fill: #F9F9F9;
 }
 
-.btn {
-  color: #00FF6B;
-  background-color: transparent;
-  border: 0;
-  outline: 0;
-  font-size: inherit;
-  font-family: inherit;
-  font-weight: 600;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  cursor: pointer;
-}
-
-.btn--back {
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
-}
-
-.btn--back-ico {
-  width: 2.5rem;
-  margin-right: 1rem;
-}
-
-.btn--back:hover, .btn--back:focus {
-  -webkit-transform: translateX(-5px);
-          transform: translateX(-5px);
-}
-
-.btn--submit {
-  background-color: #00FF6B;
-  color: #494949;
-  padding: .9rem 3.5rem;
-}
-
 .hero {
   background-color: #2A2A2A;
   padding: 15rem 0 6rem 0;
@@ -272,134 +234,82 @@ a, a:visited {
   background-size: cover;
 }
 
-.form {
-  background-color: #3B3B3B;
-  padding: 6rem;
-  width: 80%;
-}
-
-.form__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.input,
-.input {
-  color: inherit;
-  outline: none;
-  background-color: #494949;
+.btn {
+  color: #00FF6B;
+  background-color: transparent;
   border: 0;
+  outline: 0;
   font-size: inherit;
   font-family: inherit;
-  padding: 1rem 2rem;
-  width: 100%;
-}
-
-.input--item,
-.input--item {
-  position: relative;
-}
-
-.input--label,
-.input--label {
-  text-transform: capitalize;
-  color: #00FF6B;
-  position: absolute;
-  top: 5px;
-  left: 0rem;
-  -webkit-transform: translateY(-4rem);
-          transform: translateY(-4rem);
-  opacity: 1;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
-}
-
-.input:placeholder-shown + .input--label,
-.input:placeholder-shown + .input--label, .input:placeholder-shown +
-.input--label,
-.input:placeholder-shown +
-.input--label {
-  opacity: 0;
-  left: 2rem;
-  -webkit-transform: translateY(5px);
-          transform: translateY(5px);
-}
-
-.input::-webkit-input-placeholder,
-.input::-webkit-input-placeholder {
-  color: #00FF6B;
-}
-
-.input:-ms-input-placeholder,
-.input:-ms-input-placeholder {
-  color: #00FF6B;
-}
-
-.input::-ms-input-placeholder,
-.input::-ms-input-placeholder {
-  color: #00FF6B;
-}
-
-.input::placeholder,
-.input::placeholder {
-  color: #00FF6B;
-}
-
-.input--file-container,
-.input--file-container {
+  font-weight: 600;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
-.input--file-img,
-.input--file-img {
-  height: 3rem;
+.btn--back {
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 
-.input--file,
-.input--file {
-  padding: 0;
-  margin: 0;
-  width: 17rem;
-  color: transparent;
-  height: 4.3rem;
-  margin-left: 3rem;
+.btn--back-ico {
+  width: 2.5rem;
+  margin-right: 1rem;
 }
 
-.input--file::-webkit-file-upload-button,
-.input--file::-webkit-file-upload-button {
-  visibility: hidden;
+.btn--back:hover, .btn--back:focus {
+  -webkit-transform: translateX(-5px);
+          transform: translateX(-5px);
 }
 
-.input--file::before,
-.input--file::before {
-  position: absolute;
-  content: 'Choose File';
-  color: #00FF6B;
-  text-align: center;
-  display: block;
-  width: inherit;
-  padding: 1rem 1.5rem;
-  background-color: #494949;
-}
-
-.post--content {
-  resize: none;
+.btn--submit {
+  background-color: #00FF6B;
+  color: #494949;
+  padding: .9rem 3.5rem;
 }
 
 .main {
   padding: 7rem 0;
 }
 
-.new-post__container {
-  padding: 0 2rem;
+.article {
+  padding: 7rem 0;
 }
-/*# sourceMappingURL=newPost.css.map */
+
+.article__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.article__main {
+  background-color: #3B3B3B;
+  width: 70%;
+  padding: 2rem 3rem;
+}
+
+.article__title, .article__content {
+  text-transform: capitalize;
+}
+
+.article__title {
+  color: #00FF6B;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.article__content {
+  margin-top: 2rem;
+}
+/*# sourceMappingURL=view.css.map */

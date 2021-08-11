@@ -1,0 +1,28 @@
+.main{
+    padding: 7rem 0;
+}
+.article{
+    padding: 7rem 0;
+    &__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__main{
+        background-color: $color-form-bg;
+        width: 70%;
+        padding: 2rem 3rem;
+    }
+    &__title,
+    &__content{
+        text-transform: capitalize;
+    }
+    &__title{
+        color: $color-secondary-green;
+        font-size: 3rem;
+        line-height: 1.5;
+    }
+    &__content{
+        margin-top: 2rem;
+    }
+}

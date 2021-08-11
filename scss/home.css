@@ -202,6 +202,16 @@ a, a:visited {
   height: auto;
 }
 
+.hero--article {
+  display: block;
+  content: "";
+  min-height: 40rem;
+  height: 50rem;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#2A2A2A), to(transparent)), url("/assets/test-post.png");
+  background-image: linear-gradient(to top, #2A2A2A, transparent), url("/assets/test-post.png");
+  background-size: cover;
+}
+
 .navigation {
   background-color: #2A2A2A;
   width: 100%;

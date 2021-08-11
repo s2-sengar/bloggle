@@ -16,4 +16,13 @@
             height: auto;
         }
     }
+    &--article{
+        display: block;
+        content: "";
+        min-height: 40rem;
+        height: 50rem;
+        background-image:linear-gradient(to top,$color-primary-main--hero,transparent),
+                        url('/assets/test-post.png');
+        background-size: cover;
+    }
 }
