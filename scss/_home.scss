@@ -6,9 +6,9 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: center;
     &__card{
-        margin-top: 2.5rem;
-        width: 75%;
+        width: 100%;
         background-color: $color-secondary-black;
         padding: 2.5rem 3.5rem;
         cursor: pointer;
@@ -45,4 +45,10 @@
     &:hover{       
         transform: translate(0,-3px);
     }
+}
+.post-link{
+    text-decoration: none;
+    display: block;
+    width: 75%;
+    margin-top: 2.5rem;
 }

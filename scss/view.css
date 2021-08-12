@@ -312,4 +312,9 @@ a, a:visited {
 .article__content {
   margin-top: 2rem;
 }
+
+.article__date {
+  color: rgba(0, 255, 107, 0.7);
+  font-size: 1.3rem;
+}
 /*# sourceMappingURL=view.css.map */
